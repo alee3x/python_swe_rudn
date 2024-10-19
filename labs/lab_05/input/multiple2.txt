@@ -1,0 +1,4 @@
+Note that files beginning with a dot (.) can only be matched by patterns that
+also start with a dot, unlike fnmatch.fnmatch() or pathlib.Path.glob(). (For
+tilde and shell variable expansion, use os.path.expanduser() and
+os.path.expandvars().)

@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- Created by htmlize-1.57 in css mode. -->
+
+<html>
+  <head>
+    <title>new.py</title>
+    <style type="text/css">
+      <!--
+      body, body * {
+          font-family: SF Mono, Menlo, monospace !important;
+          color: #000000 !important;
+          background-color: #ffffff;
+          font-size: 12pt;
+        }
+
+          .builtin {
+            /* font-lock-builtin-face */
+              color: #000000;
+          }
+          .comment {
+            /* font-lock-comment-face */
+              color: #1336C2 !important;
+          }
+          .comment-delimiter {
+            /* font-lock-comment-delimiter-face */
+              color: #1336C2 !important;
+          }
+          .constant {
+            /* font-lock-constant-face */
+              color: #000000;
+          }
+          .keyword {
+            /* font-lock-keyword-face */
+              color: #000000;
+          }
+          .operator {
+                     }
+          .region {
+            /* region */
+            color: #000000;
+            background-color: #c4c4c4;
+          }
+          .string {
+            /* font-lock-string-face */
+              color: #2F515B !important;
+          }
+          .variable-name {
+            /* font-lock-variable-name-face */
+              color: #000000;
+          }
+
+          a {
+            color: inherit;
+            background-color: inherit;
+            font: inherit;
+            text-decoration: inherit;
+            font-family: Menlo, monospace;
+          }
+          a:hover {
+              text-decoration: underline;
+              font-family: Menlo, monospace;
+          }
+        -->
+    </style>
+  </head>
+
+  <body>
+    <pre>
+<span class="comment-delimiter"># </span><span class=
+"comment">&#1053;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1091;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1095;&#1080;&#1090;&#1072;&#1077;&#1090; &#1090;&#1077;&#1082;&#1089;&#1090;&#1086;&#1074;&#1099;&#1081; &#1092;&#1072;&#1081;&#1083; &#1080; &#1074;&#1099;&#1074;&#1086;&#1076;&#1080;&#1090; &#1077;&#1075;&#1086; &#1089;&#1086;&#1076;&#1077;&#1088;&#1078;&#1080;&#1084;&#1086;&#1077; &#1085;&#1072;
+</span><span class="comment-delimiter"># </span><span class=
+"comment">&#1101;&#1082;&#1088;&#1072;&#1085;.
+</span>
+<span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">'example.txt'</span>, <span class=
+"string">'r'</span>) <span class="keyword">as</span> <span class=
+"builtin">file</span>:
+    <span class="variable-name">content</span> <span class=
+"operator">=</span> <span class="builtin">file</span>.read()
+    <span class="builtin">print</span>(content)
+
+<span class="comment-delimiter"># </span><span class=
+"comment">&#1057;&#1086;&#1079;&#1076;&#1072;&#1081;&#1090;&#1077; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1091;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1082;&#1086;&#1087;&#1080;&#1088;&#1091;&#1077;&#1090; &#1089;&#1086;&#1076;&#1077;&#1088;&#1078;&#1080;&#1084;&#1086;&#1077; &#1086;&#1076;&#1085;&#1086;&#1075;&#1086; &#1090;&#1077;&#1082;&#1089;&#1090;&#1086;&#1074;&#1086;&#1075;&#1086; &#1092;&#1072;&#1081;&#1083;&#1072; &#1074; &#1076;&#1088;&#1091;&#1075;&#1086;&#1081;.
+</span>
+<span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">'input/file2.txt'</span>, <span class=
+"string">'r'</span>) <span class=
+"keyword">as</span> file2, <span class=
+"builtin">open</span>(<span class=
+"string">'output/file1.txt'</span>,<span class=
+"string">'w'</span>) <span class="keyword">as</span> file1:
+    file1.write(file2.read())
+
+
+<span class="comment-delimiter"># </span><span class=
+"comment">&#1053;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1087;&#1088;&#1080;&#1085;&#1080;&#1084;&#1072;&#1077;&#1090; &#1080;&#1084;&#1103; &#1092;&#1072;&#1081;&#1083;&#1072; &#1080; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1072;&#1077;&#1090; &#1082;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086; &#1089;&#1090;&#1088;&#1086;&#1082; &#1074; &#1101;&#1090;&#1086;&#1084; &#1092;&#1072;&#1081;&#1083;&#1077;.
+</span><span class="variable-name">iterator</span> <span class=
+"operator">=</span> 0
+<span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">'example.txt'</span>, <span class=
+"string">'r'</span>) <span class="keyword">as</span> <span class=
+"builtin">file</span>:
+    <span class="keyword">for</span> line <span class=
+"keyword">in</span> <span class="builtin">file</span>:
+        <span class="variable-name">iterator</span> <span class=
+"operator">+=</span> 1
+<span class="builtin">print</span>(iterator)
+
+<span class="comment-delimiter"># </span><span class=
+"comment">&#1056;&#1077;&#1072;&#1083;&#1080;&#1079;&#1091;&#1081;&#1090;&#1077; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1091;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1095;&#1080;&#1090;&#1072;&#1077;&#1090; &#1092;&#1072;&#1081;&#1083; &#1089; &#1095;&#1080;&#1089;&#1083;&#1072;&#1084;&#1080; &#1080; &#1079;&#1072;&#1087;&#1080;&#1089;&#1099;&#1074;&#1072;&#1077;&#1090; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1095;&#1077;&#1090;&#1085;&#1099;&#1077; &#1095;&#1080;&#1089;&#1083;&#1072; &#1074; &#1085;&#1086;&#1074;&#1099;&#1081; &#1092;&#1072;&#1081;&#1083;.
+</span><span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">'input/numbers_in.txt'</span>, <span class=
+"string">'r'</span>) <span class=
+"keyword">as</span> num_in, <span class=
+"builtin">open</span>(<span class=
+"string">'output/numbers_out.txt'</span>, <span class=
+"string">'w'</span>) <span class="keyword">as</span> num_out:
+    <span class="keyword">for</span> number <span class=
+"keyword">in</span> num_in:
+        <span class="keyword">if</span> <span class=
+"builtin">int</span>(number) <span class=
+"operator">%</span> 2 <span class="operator">==</span> 0:
+            <span class="builtin">print</span>(<span class=
+"builtin">str</span>(number), <span class=
+"builtin">file</span><span class=
+"operator">=</span>num_out, <span class=
+"string">'</span><span class="constant">\n</span><span class=
+"string">'</span>)
+<span class="variable-name">N</span> <span class=
+"operator">=</span> <span class="builtin">int</span>(<span class=
+"builtin">input</span>(<span class=
+"string">"How many files? "</span>))
+
+<span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">'output/multiple_out.txt'</span>, <span class=
+"string">'w+'</span>) <span class="keyword">as</span> out:
+    <span class="keyword">for</span> i <span class=
+"keyword">in</span> <span class=
+"builtin">range</span>(1, N <span class="operator">+</span> 1):
+        <span class="variable-name">mult_file</span> <span class=
+"operator">=</span> <span class=
+"string">"input/multiple"</span> <span class=
+"operator">+</span> <span class=
+"builtin">str</span>(i) <span class="operator">+</span> <span class="string">".txt"</span>
+        <span class="keyword">with</span> <span class=
+"builtin">open</span>(mult_file, <span class=
+"string">"r"</span>) <span class="keyword">as</span> infile:
+            out.write(infile.read())
+
+<span class="comment-delimiter"># </span><span class=
+"comment">&#1057;&#1086;&#1079;&#1076;&#1072;&#1081;&#1090;&#1077; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1091;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1089;&#1095;&#1080;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090; &#1076;&#1072;&#1085;&#1085;&#1099;&#1077; &#1080;&#1079; JSON-&#1092;&#1072;&#1081;&#1083;&#1072; &#1080; &#1074;&#1099;&#1074;&#1086;&#1076;&#1080;&#1090; &#1080;&#1093; &#1074; &#1091;&#1076;&#1086;&#1073;&#1086;&#1095;&#1080;&#1090;&#1072;&#1077;&#1084;&#1086;&#1084; &#1092;&#1086;&#1088;&#1084;&#1072;&#1090;&#1077;.
+</span><span class="keyword">import</span> json
+
+<span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">"input/64KB-min.json"</span>, <span class=
+"string">"r"</span>) <span class="keyword">as</span> infile:
+    <span class="variable-name">json_data</span> <span class=
+"operator">=</span> json.load(infile)
+    <span class=
+"builtin">print</span>(json.dumps(json_data, indent <span class=
+"operator">=</span> 4, sort_keys<span class=
+"operator">=</span><span class="constant">False</span>))
+
+<span class="comment-delimiter"># </span><span class=
+"comment">&#1056;&#1077;&#1072;&#1083;&#1080;&#1079;&#1091;&#1081;&#1090;&#1077; &#1089;&#1082;&#1088;&#1080;&#1087;&#1090;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1081; &#1095;&#1080;&#1090;&#1072;&#1077;&#1090; CSV-&#1092;&#1072;&#1081;&#1083;, &#1086;&#1073;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090; &#1076;&#1072;&#1085;&#1085;&#1099;&#1077; &#1080; &#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1103;&#1077;&#1090; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099; &#1074; &#1085;&#1086;&#1074;&#1086;&#1084; CSV-&#1092;&#1072;&#1081;&#1083;&#1077;,
+</span><span class="comment-delimiter">#</span><span class=
+"comment">&#1076;&#1086;&#1073;&#1072;&#1074;&#1083;&#1103;&#1103; &#1082;&#1086;&#1083;&#1086;&#1085;&#1082;&#1091; &#1089; &#1088;&#1072;&#1089;&#1095;&#1077;&#1090;&#1086;&#1084;.
+</span><span class="keyword">import</span> csv
+
+<span class="comment-delimiter"># </span><span class=
+"comment">hw_200.csv:
+</span><span class="comment-delimiter"># </span><span class=
+"comment">height and weight for 200 individuals Each record includes 3 values: index,
+</span><span class="comment-delimiter"># </span><span class=
+"comment">height (inches), weight (pounds). There is also an initial header line
+</span>
+<span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">"input/hw_200.csv"</span>, newline<span class=
+"operator">=</span><span class="string">''</span>) <span class=
+"keyword">as</span> csvfile:
+    <span class="variable-name">reader</span> <span class=
+"operator">=</span> csv.reader(csvfile, delimiter<span class=
+"operator">=</span><span class="string">','</span>)
+    <span class="variable-name">data</span> <span class=
+"operator">=</span> <span class="builtin">list</span>(reader)
+    <span class="comment-delimiter"># </span><span class=
+"comment">Calculate Height/Weight Ratio
+</span>    data[0].append(<span class=
+"string">"\"Height/Weight Ratio (in/lb)\""</span>)
+    <span class="keyword">for</span> i <span class=
+"keyword">in</span> <span class=
+"builtin">range</span>(1, <span class="builtin">len</span>(data)):
+        <span class="variable-name">row</span> <span class=
+"operator">=</span> data[i]
+        <span class="variable-name">ratio</span> <span class=
+"operator">=</span> <span class=
+"builtin">round</span>(((<span class=
+"builtin">float</span>(row[1]) <span class=
+"operator">/</span> <span class=
+"builtin">float</span>(row[2])) <span class=
+"operator">*</span> 100), 2)
+        row.append(<span class="builtin">str</span>(ratio))
+        <span class="variable-name">data</span>[i] <span class=
+"operator">=</span> row
+
+<span class="keyword">with</span> <span class=
+"builtin">open</span>(<span class=
+"string">"output/hw_200_modified.csv"</span>, <span class=
+"string">"w"</span>, newline<span class=
+"operator">=</span><span class="string">""</span>) <span class=
+"keyword">as</span> outfile:
+    <span class="variable-name">writer</span> <span class=
+"operator">=</span> csv.writer(outfile)
+    writer.writerows(data)
+</pre>
+  </body>
+</html>
